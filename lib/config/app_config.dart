@@ -1,17 +1,20 @@
 /// Global Configuration Constants
 class AppConfig {
   /// API Base URLs - Change based on environment
-  static const String baseUrl = 'https://setuapi.broadsytechnologies.com';  /// Change to your API URL
+  static const String baseUrl = 'https://enquiry-devapi.broadsytechnologies.com';  /// Change to your API URL
   static const String apiVersion = '/api';
   
   /// Complete API Endpoints
+  /// pratik.dev540@gmail.com
+  /// Pratik@123
+  
   static const String loginEndpoint = '$apiVersion/login';
   static const String dashboardEndpoint = '$apiVersion/dashboard';
   static const String menuEndpoint = '$apiVersion/menu';
   static const String enquiriesEndpoint = '$apiVersion/enquiries';
   static const String projectsEndpoint = '$apiVersion/projects';
   static const String logoutEndpoint = '$apiVersion/auth/logout';
-  
+    
   /// App Constants
   static const String appName = 'Real Estate CRM';
   static const String appVersion = '1.0.0';
@@ -38,11 +41,11 @@ class EnvironmentConfig {
   static String getBaseUrl() {
     switch (environment) {
       case AppEnvironment.development:
-        return 'https://setuapi.broadsytechnologies.com';
+        return 'https://enquiry-devapi.broadsytechnologies.com';
       case AppEnvironment.staging:
-        return 'https://setuapi.broadsytechnologies.com';
+        return 'https://enquiry-devapi.broadsytechnologies.com';
       case AppEnvironment.production:
-        return 'https://setuapi.broadsytechnologies.com';
+        return 'https://enquiry-devapi.broadsytechnologies.com';
     }
   }
 }
